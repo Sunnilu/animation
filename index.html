@@ -19,76 +19,110 @@
     }
 
     #drummer {
-    animation: gentle-bounce 2s infinite ease-in-out;
-}
+      animation: gentle-bounce 2s infinite ease-in-out;
+    }
 
-@keyframes gentle-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
+    @keyframes gentle-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
 
-/* customizable snowflake styling */
-.snowflake {
-  color: #fff;
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
-}
- 
-.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .snowflake, .snowflake .inner {
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+    }
+
+    @keyframes snowflakes-fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(110vh); }
+    }
+
+    @keyframes snowflakes-shake {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(80px); }
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      z-index: 9999;
+      user-select: none;
+      cursor: default;
+      animation-name: snowflakes-shake;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+    }
+
+    .snowflake .inner {
+      animation-duration: 10s;
+      animation-name: snowflakes-fall;
+      animation-timing-function: linear;
+    }
   </style>
 </head>
 
 <body class="bg-primary">
+  <!-- Navbar (Hamburger Menu) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Claymation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="claymation_details.html">How Claymation Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <header class="jumbotron jumbotron-fluid text-center">
     <div class="container">
       <h1 class="display-4">Claymation and The Little Drummer Boy</h1>
     </div>
   </header>
+
+  <!-- Snowflakes -->
   <div class="snowflakes" aria-hidden="true">
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-      <div class="inner">❅</div>
-    </div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
+    <div class="snowflake"><div class="inner">❅</div></div>
   </div>
-  
+
+  <!-- Main Content -->
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6 justify-content-center text-center">
-        <h3>Claymation, a type of stop-motion animation, originated with the invention of plasticine clay in the late 19th century, which allowed for easily molded and slow-drying clay figures that could be manipulated for animation; the term "claymation" itself was coined by animator Will Vinton in the 1970s.</h3>
-
+        <h3>Claymation, a type of stop-motion animation, originated with the invention of plasticine clay in the late 19th century...</h3>
         <div class="dropdown mt-3">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
             How Claymation Works
@@ -103,39 +137,21 @@
   </div>
 
   <div class="rounded-3 text-center border border-3 border-primary p-4 col-12 col-md-10 col-xl-8 offset-xl-2 offset-md-1 py-5 mt-5">
-  <div class="row g-4 justify-content-center">
-    <div class="col-md-6">
-        <h2>
-          The Little Drummer Boy is a stop motion television special produced by Rankin/Bass Productions, based on the song of the same name. It was first televised in Canada on December 19, 1968, on the CTV Television Network, followed four days later by its American nationwide telecast on NBC. A sequel was broadcast in 1976. 
-        </h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <h2>The Little Drummer Boy is a stop motion television special produced by Rankin/Bass Productions...</h2>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/drummer-boy.png" id="drummer" class="img-fluid rounded-3 border border-primary border-3" alt="Drummer Boy">
+      </div>
     </div>
-    <div class="col-md-6">
-        <img src="assets/images/drummer-boy.png" id="drummer" class="img-fluid rounded-3 rounded border border-primary border-3" alt="Drummer Boy">
-    </div>
-</div>
   </div>
-
-  <!---Spacer----->
-  <div class=" invisible mr-5 container-fluid d-flex" id="drummerboy-spacer">
-    <h2 class="display-1 d-flex"> kjfhdskf dksjfhjdk fjdkbfdkjsh dksjfhjdk fjdkbfdkjshfkdkjfhdskf dksjfhjdk fjdkbfdkjshfjdhfksdjhf</h2>
-</div>
-
-<div>
-  <p> Aaron, a Jewish boy living peacefully on a farm, loses his parents to bandits. Traumatized, he vows to hate humanity. Forced into a traveling circus, he initially rebels. However, witnessing the Magi's journey and their kindness, he begins to soften. After escaping with his animals, he joins the Magi in Bethlehem. Unable to offer a traditional gift, Aaron plays his drum for the newborn baby, a gesture that heals his lamb and restores his faith in humanity.</p>
-</div>
-
-<!---Spacer----->
-<div class=" invisible mr-5 container-fluid d-flex" id="drummerboy-spacer">
-  <h2 class="display-1 d-flex"> kjfhdskf dksjfhjdk fjdkbfdkjsh dksjfhjdk fjdkbfdkjshfkdkjfhdskf dksjfhjdk fjdkbfdkjshfjdhfksdjhf</h2>
-</div>
-
 
   <div class="bg-primary py-5 m-5 rounded-5 p-5">
     <h1 class="text-center mb-4 fw-bolder"> Renditions of The Little Drummer Boy</h1>
     <div class="container px-4">
       <div id="multiCarousel" class="carousel slide position-relative">
         <div class="carousel-inner">
-          <!-- First Set of Cards -->
           <div class="carousel-item active">
             <div class="row g-4">
               <div class="col-md-3 col-lg-3">
@@ -143,7 +159,6 @@
                   <div class="card-body">
                     <h3 class="card-title mb-4 fw-bolder">Ray Conniff</h3>
                     <img src="assets/images/Ray Conniff.webp" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Ray">
-                    <p class="card-text"></p>
                   </div>
                 </div>
               </div>
@@ -152,7 +167,6 @@
                   <div class="card-body">
                     <h3 class="card-title mb-4 fw-bolder">Bert Kaempfert</h3>
                     <img src="assets/images/Bert.jpg" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Bert">
-                    <p class="card-text"> </p>
                   </div>
                 </div>
               </div>
@@ -161,7 +175,6 @@
                   <div class="card-body">
                     <h3 class="card-title mb-4 fw-bolder">Frank Sinatra</h3>
                     <img src="assets/images/FrankSinatra.jpg" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Frank">
-                    <p class="card-text">.</p>
                   </div>
                 </div>
               </div>
@@ -170,67 +183,16 @@
                   <div class="card-body">
                     <h3 class="card-title mb-4 fw-bolder">Vince Guaraldi</h3>
                     <img src="assets/images/Vince.jpeg" class="img-fluid rounded-3 mb-4 border border-3 border-black" alt="Vince">
-                    <p class="card-text"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Second Set of Cards -->
           <div class="carousel-item">
             <div class="row g-4">
-              <div class="col-md-3 col-lg-3">
-                <div class="card shadow h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4 fw-bolder"></h3>
-                    <img src="assets/images/Stronger.webp" class="img-fluid rounded 3 mb-4 border border-3 border-black" alt="Kamen rider Stronger">
-                    <p class="card-text"></p>
-                </div>
-              </div>
-              <div class="col-md-3 col-lg-3">
-                <div class="card shadow h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4 fw-bolder"></h3>
-                    <img src="assets/images/skyrider2.webp" class="img-fluid rounded 3 mb-4 border border-3 border-black" alt="Kamen rider Skyrider">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-lg-3">
-                <div class="card shadow h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4 fw-bolder"></h3>
-                    <img src="assets/images/Super-1.webp" class="img-fluid rounded 3 mb-4 border border-3 border-black" alt="Kamen rider Super-1">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-lg-3">
-                <div class="card shadow h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4 fw-bolder"></h3>
-                    <img src="assets/images/Blackrx.webp" class="img-fluid rounded 3 mb-4 border border-3 border-black" alt="Kamen rider Black/Black RX">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam aliquid, voluptatibus corrupti omnis debitis earum?</p>
-                  </div>
-                </div>
-              </div>
+              <!-- Additional Carousel items go here -->
             </div>
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#multiCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#multiCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <button class="carousel-control-prev
