@@ -3,6 +3,8 @@
 Suntha Lucas, Suntha.Lucas@atlasschool.com
 Kevin Cyrus Jr. Kevin.Cyrus@atlasschool.com
 
+https://github.com/Sunnilu/animation.git
+
 
 Drumming Boy Claymation Animation
 Description
